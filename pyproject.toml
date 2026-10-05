@@ -1,7 +1,7 @@
 [project]
 name = "my-fastapi-app"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI Full-Featured Web Application"
 readme = "README.md"
 authors = [
     { name = "RAHUL KP KURUP", email = "rahulkpkurup@gmail.com" }
@@ -11,9 +11,5 @@ dependencies = [
     "fastapi[standard]>=0.142.2",
 ]
 
-[project.scripts]
-my-fastapi-app = "my_fastapi_app:main"
-
-[build-system]
-requires = ["uv_build>=0.12.10,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false

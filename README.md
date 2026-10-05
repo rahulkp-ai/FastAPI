@@ -4,8 +4,6 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository accompanies the **FastAPI Python Series** by [Corey Schafer](https://youtube.com/@coreyms). It provides a step-by-step code structure designed to take you from a complete beginner to building, testing, and deploying a production-ready full-stack web application.
-
 ---
 
 ## 📌 Project Overview
