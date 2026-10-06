@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Unlike basic API guides, this repository builds a complete, dual-purpose web application from the ground up:
 
