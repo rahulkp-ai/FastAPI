@@ -26,30 +26,33 @@ posts: list[dict] = [
 ]
 
 @app.get("/", include_in_schema=False, name="home")
-@app.get("/posts", include_in_schema=False, name = "posts")
+@app.get("/posts", include_in_schema=False, name="posts")
 def home(request: Request):
     return templates.TemplateResponse(
-        request,
-        "home.html", 
-        {"posts": posts, "title":"Home"})
+        request=request,
+        name="home.html", 
+        context={"posts": posts, "title": "Home"}
+    )
 
-@app.get("/posts/{post_id}", include_in_schema=False)
-def get_post(request: Request ,post_id: int):
+# FIX 1: Explicitly name this route "post_page" so url_for('post_page', ...) works
+@app.get("/posts/{post_id}", include_in_schema=False, name="post_page")
+def post_page(request: Request, post_id: int):
     for post in posts:
         if post.get("id") == post_id:
-            title = post['title'][:50]
             return templates.TemplateResponse(
-                request,
-                "post.html", 
-                {"post": post, "title":"Home"})
+                request=request,
+                name="post.html", 
+                context={"post": post, "title": post['title'][:50]}
+            )
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Post not found")
 
 @app.get("/api/posts")
-def get_posts():
+def get_api_posts():
     return posts
 
+
 @app.get("/api/posts/{post_id}")
-def get_post(post_id: int):
+def get_api_post(post_id: int):
     for post in posts:
         if post.get("id") == post_id:
             return post
