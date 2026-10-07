@@ -15,7 +15,7 @@ Unlike basic API guides, this repository builds a complete, dual-purpose web app
 
 ---
 
-## 🎓 Key Features Covered
+## Key Features Covered
 
 ### 1. Framework & Core Concepts
 
