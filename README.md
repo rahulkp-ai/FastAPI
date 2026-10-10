@@ -52,3 +52,28 @@ Unlike basic API guides, this repository builds a complete, dual-purpose web app
 | **Package Manager**  | `uv` / `pip`                                   |
 
 ---
+
+## 🚀 How to Run
+
+### Prerequisites
+
+Ensure you have [`uv`](https://github.com/astral-sh/uv) installed.
+
+```bash
+# Install uv (if not already installed)
+curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
+
+```
+
+### Running the Application
+
+Run the application in development mode with auto-reload enabled:
+
+```Bash
+uv run fastapi dev main.py --port 8080
+```
+
+Once running, access the services at:
+Web Application / Frontend: http://localhost:8080
+Interactive API Docs (Swagger UI): http://localhost:8080/docs
+Alternative API Docs (ReDoc): http://localhost:8080/redoc
