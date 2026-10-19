@@ -65,7 +65,7 @@ curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | 
 
 ```
 
-### Running the Application
+### ⚡️ Running the Application
 
 Run the application in development mode with auto-reload enabled:
 
