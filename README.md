@@ -38,7 +38,7 @@ Unlike basic API guides, this repository builds a complete, dual-purpose web app
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component            | Technology                                     |
 | :------------------- | :--------------------------------------------- |
@@ -53,7 +53,7 @@ Unlike basic API guides, this repository builds a complete, dual-purpose web app
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 
