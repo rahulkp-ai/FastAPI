@@ -8,7 +8,7 @@ class UserBase(BaseModel):
 class UserCreate(UserBase):
     pass
 
-class UserResponds(UserBase):
+class UserResponse(UserBase):
     model_config = ConfigDict(from_attrbute=True)
     
     id:int
@@ -18,15 +18,18 @@ class UserResponds(UserBase):
 class PostBase(BaseModel):
     title: str = Field(min_length=1, max_length=100)
     content: str = Field(min_length=1)
-    author: str = Field(min_length=1, max_length=50)
+    
 
 class PostCreate(PostBase):
-    pass
+    user_id: int # temporary
 
 class PostResponse(PostBase):
     model_config = ConfigDict(from_attrbute=True)
 
     id: int
-    date_posted: str
+    user_id: int
+    date_posted: datetime
+    author: UserResponse
+
 
 
