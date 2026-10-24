@@ -10,7 +10,7 @@
 
 Unlike basic API guides, this repository builds a complete, dual-purpose web application from the ground up:
 
-- **JSON REST API:** Secure endpoints structured for programatic access, frontend web frameworks, and mobile clients.
+- **JSON REST API:** Secure endpoints structured for programatic access, frontend web frameworks, and mobile clients
 - **Dynamic HTML Frontend:** Server-side rendered interface using **Jinja2** templates and static asset handling for browser interactions.
 
 ---
